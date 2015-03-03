@@ -77,13 +77,6 @@ function swg_widgets_init() {
 add_action( 'init', 'swg_widgets_init' );
 
 
-/* date formating */
-
-function formatDateTime($time){
-	$dt= date_create($time);
-	return $dt->format('M d,Y');
-}
-
 /**
  * excerpt code 
  */
