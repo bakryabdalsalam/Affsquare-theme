@@ -28,12 +28,12 @@ remove_filter( 'comment_text', 'capital_P_dangit' );
 
 /**
  * This theme uses wp_nav_menus() for the header menu, utility menu and footer menu.
-
+*/
 register_nav_menus( array(
 	'mainmenu' => __( 'Primary Menu', 'themename' ),
 	'footermenu' => __( 'Footer Menu', 'themename' ),
 ) );
- */
+ 
 /** 
  * Add default posts and comments RSS feed links to head
  */
