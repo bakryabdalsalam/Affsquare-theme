@@ -4,44 +4,108 @@
  * @subpackage customtheme
  */
 ?><!DOCTYPE html>
-<!--[if lt IE 7 ]> <html <?php language_attributes(); ?> class="ie6"> <![endif]-->
-<!--[if IE 7 ]>    <html <?php language_attributes(); ?> class="ie7"> <![endif]-->
-<!--[if IE 8 ]>    <html <?php language_attributes(); ?> class="ie8"> <![endif]-->
-<!--[if IE 9 ]>    <html <?php language_attributes(); ?> class="ie9"> <![endif]-->
-<!--[if (gt IE 9)|!(IE)]><!--> <html <?php language_attributes(); ?>> <!--<![endif]-->
-
+<html <?php language_attributes(); ?>>
 <head>
-<meta charset="<?php bloginfo( 'charset' ); ?>" />
-<meta http-equiv="X-UA-Compatible" content="chrome=1">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="<?php bloginfo( 'charset' ); ?>">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><?php wp_title( '|', true, 'right' ); ?></title>
+    <?php wp_head(); ?>
+    <style>
+        .site-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px;
+        }
 
-<title>
-	<?php wp_title( '|', true, 'right' ); ?>
-</title>
+        .site-logo {
+            max-width: 100px;
+            height: auto;
+        }
 
-	<link rel="profile" href="http://gmpg.org/xfn/11" />
-    <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); echo '?' . filemtime( get_stylesheet_directory() . '/style.css'); ?>" type="text/css" media="screen, projection" />
+        .site-navigation {
+            display: flex;
+            align-items: center;
+        }
 
-	<?php if ( is_singular() && get_option( 'thread_comments' ) ) wp_enqueue_script( 'comment-reply' ); ?>
-	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
-	
-	<!--[if lt IE 9]>
-    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-	
-	<?php wp_head(); ?>
-	</head>
-	
-	<body <?php body_class(); ?>>
-		
-	<div id="page" class="hfeed">
-		<header id="branding" role="banner">
-				<a href="<?php echo home_url();?>"><img id="logo" src="<?php echo get_template_directory_uri(); ?>/images/yourlogo.jpg"/></a>
-				<nav id="access" role="article">
-					<div class="skip-link visuallyhidden">
-						<a href="#content" title="<?php esc_attr_e( 'Skip to content', 'themename' ); ?>"><?php _e( 'Skip to content', 'themename' ); ?></a>
-					</div>
-					<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
-				</nav><!-- #access -->
-		</header><!-- #branding -->
-		<div id="main">
+        .main-navigation {
+            margin-left: 20px;
+        }
+
+        .main-navigation ul {
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .main-navigation li {
+            margin-left: 20px;
+            position: relative;
+        }
+
+        .main-navigation a {
+            display: block;
+            padding: 10px;
+            text-decoration: none;
+            color: #333;
+            font-size: 16px;
+            font-weight: bold;
+            text-transform: uppercase;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        .main-navigation a:hover {
+            background-color: #f2f2f2;
+        }
+
+        .sub-menu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            z-index: 1;
+            background-color: #fff;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .sub-menu li {
+            margin: 0;
+        }
+
+        .sub-menu a {
+            padding: 10px;
+            font-size: 14px;
+            font-weight: normal;
+            text-transform: none;
+        }
+
+        .sub-menu a:hover {
+            background-color: #f2f2f2;
+        }
+
+        .menu-item-has-children:hover > .sub-menu {
+            display: block;
+        }
+    </style>
+</head>
+
+<body <?php body_class(); ?>>
+    <header class="site-header">
+        <div class="site-logo">
+            <?php if ( get_theme_mod( 'affsquare_logo' ) ) : ?>
+                <a href="<?php echo home_url(); ?>"><img id="affsquare_logo_id" class="site-logo" src="<?php echo esc_url( get_theme_mod( 'affsquare_logo' ) ); ?>" alt="Site Logo"></a>
+            <?php else : ?>
+                <a href="<?php echo home_url(); ?>"><img id="affsquare_logo_id" class="site-logo" src="<?php echo get_template_directory_uri(); ?>/logo.png" alt="Site Logo"></a>
+            <?php endif; ?>
+        </div>
+        <nav class="site-navigation">
+            <div class="main-navigation">
+                <?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'nav-menu' ) ); ?>
+            </div>
+        </nav>
+    </header>
+    <div id="content" class="site-content">
+        <!-- Your page content goes here -->
+    </div>
+    <?php wp_footer(); ?>

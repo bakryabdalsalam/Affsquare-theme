@@ -1,21 +1,27 @@
-<?php
-/**
- * @package WordPress
- * @subpackage themename
- */
-?>
+<div class="container">
+  <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+    <div class="col-md-4 col-12 d-flex align-items-center">
+      <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+        <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"/></svg>
+      </a>
+      <span class="mb-3 mb-md-0 text-body-secondary">&copy; 2023 Company, Inc</span>
+    </div>
 
-	</div><!-- #main  -->
-	</div><!-- #page -->
-	<footer id="colophon" role="contentinfo">
-			<div id="site-generator">
-				<?php wp_nav_menu( array( 'theme_location' => 'footer' ) ); ?>
-				<p id="copyright">&copy; Copyright <?php echo date('Y') . " " . esc_attr( get_bloginfo( 'name', 'display' ) ); ?></p>
-			</div>
-	</footer><!-- #colophon -->
+    <?php
+    // Display the WordPress menu in the footer with Bootstrap styles
+    wp_nav_menu( array(
+        'theme_location' => 'footer-menu',
+        'container_class' => 'col-md-4 col-12 d-flex justify-content-end',
+        'menu_class' => 'nav col-md-8 col-12 justify-content-end list-unstyled d-flex',
+        'fallback_cb' => false,
+        'walker' => new Bootstrap_Walker_Nav_Menu()
+    ) );
+    ?>
+  </footer>
+</div>
 
+<div class="b-example-divider"></div>
 
-<?php wp_footer(); ?>  
-
+<?php wp_footer(); ?>
 </body>
 </html>

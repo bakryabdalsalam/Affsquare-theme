@@ -1,9 +1,9 @@
 /*
-Theme Name: Default Theme Template
-Theme URI: http://www.thewebsite.com
-Author: customtheme
-Author URI: http://www.customtheme.com
-Description: put description
+Theme Name: Affsquare
+Theme URI: http://www.Affsquare.com
+Author: Bakry
+Author URI: http://www.Affsquare.com
+Description: Affsquare theme
 Version: 1.0
 */
 /* Section guides for coding
@@ -19,123 +19,334 @@ Version: 1.0
  * comments
  */
 /* html5doctor.com Reset Stylesheet \\v1.6.1 \\ Last Updated: 2010-09-17 \\ http://richclarkdesign.com \\ @rich_clark */
-html, body, div, span, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-abbr, address, cite, code,
-del, dfn, em, img, ins, kbd, q, samp,
-small, strong, sub, sup, var,
-b, i,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section, summary,
-time, mark, audio, video {
-  margin:0;
-  padding:0;
-  border:0;
-  outline:0;
-  font-size:100%;
-  vertical-align:baseline;
-  background:transparent;
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
 }
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section { display:block; }
-nav ul { list-style:none; }
-blockquote, q { quotes:none; }
-blockquote:before, blockquote:after,
-q:before, q:after { content:''; content:none; }
-a { margin:0; padding:0; font-size:100%; vertical-align:baseline; background:transparent; }
-ins { background-color:#ff9; color:#000; text-decoration:none; }
-mark { background-color:#ff9; color:#000; font-style:italic; font-weight:bold; }
-del { text-decoration: line-through; }
-abbr[title], dfn[title] { border-bottom:1px dotted; cursor:help; }
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+nav ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+del {
+  text-decoration: line-through;
+}
+abbr[title],
+dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
 /* tables still need cellspacing="0" in the markup */
-table { border-collapse:collapse; border-spacing:0; }
-hr { display:block; height:1px; border:0; border-top:1px solid #ccc; margin:1em 0; padding:0; }
-input, select { vertical-align:middle; }
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+input,
+select {
+  vertical-align: middle;
+}
 
 /*
  *
  * Base Typography 
  *
  */
-body { font:13px/1.231 sans-serif; *font-size:small; }
-select, input, textarea, button { font:99% sans-serif; }
-pre, code, kbd, samp { font-family: monospace, sans-serif; }
+body {
+  font: 13px/1.231 sans-serif;
+  *font-size: small;
+}
+select,
+input,
+textarea,
+button {
+  font: 99% sans-serif;
+}
+pre,
+code,
+kbd,
+samp {
+  font-family: monospace, sans-serif;
+}
 
 /*
  *
  * Base Styles 
  *
  */
-body, select, input, textarea { 
-  /* #444 looks better than black: twitter.com/H_FJ/statuses/11800719859 */ 
-  color: #444; 
+body,
+select,
+input,
+textarea {
+  /* #444 looks better than black: twitter.com/H_FJ/statuses/11800719859 */
+  color: #444;
   /* set your base font here, to apply evenly */
-  /* font-family: Georgia, serif;  */   
+  /* font-family: Georgia, serif;  */
 }
 /* Headers (h1,h2,etc) have no default font-size or margin,
-   you'll want to define those yourself. */ 
-h1,h2,h3,h4,h5,h6 { font-weight: bold; }
-/* always force a scrollbar in non-IE */ 
-html { overflow-y: scroll; }
+   you'll want to define those yourself. */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: bold;
+}
+/* always force a scrollbar in non-IE */
+html {
+  overflow-y: scroll;
+}
 /* Accessible focus treatment: people.opera.com/patrickl/experiments/keyboard/test */
-a:hover, a:active { outline: none; }
-a, a:active, a:visited { color: #607890; }
-a:hover { color: #036; }
-ul, ol { margin-left: 1.8em; }
-ol { list-style-type: decimal; }
+a:hover,
+a:active {
+  outline: none;
+}
+a,
+a:active,
+a:visited {
+  color: #607890;
+}
+a:hover {
+  color: #036;
+}
+ul,
+ol {
+  margin-left: 1.8em;
+}
+ol {
+  list-style-type: decimal;
+}
 /* Remove margins for navigation lists */
-nav ul, nav li { margin: 0; } 
-small { font-size: 85%; }
-strong, th { font-weight: bold; }
-td, td img { vertical-align: top; } 
-sub { vertical-align: sub; font-size: smaller; }
-sup { vertical-align: super; font-size: smaller; }
-pre { 
-  padding: 15px; 
+nav ul,
+nav li {
+  margin: 0;
+}
+small {
+  font-size: 85%;
+}
+strong,
+th {
+  font-weight: bold;
+}
+td,
+td img {
+  vertical-align: top;
+}
+sub {
+  vertical-align: sub;
+  font-size: smaller;
+}
+sup {
+  vertical-align: super;
+  font-size: smaller;
+}
+pre {
+  padding: 15px;
   /* www.pathf.com/blogs/2008/05/formatting-quoted-code-in-blog-posts-css21-white-space-pre-wrap/ */
   white-space: pre; /* CSS2 */
   white-space: pre-wrap; /* CSS 2.1 */
   white-space: pre-line; /* CSS 3 (and 2.1 as well, actually) */
   word-wrap: break-word; /* IE */
 }
-textarea { overflow: auto; } /* thnx ivannikolic! www.sitepoint.com/blogs/2010/08/20/ie-remove-textarea-scrollbars/ */
-.ie6 legend, .ie7 legend { margin-left: -7px; } /* thnx ivannikolic! */
+textarea {
+  overflow: auto;
+} /* thnx ivannikolic! www.sitepoint.com/blogs/2010/08/20/ie-remove-textarea-scrollbars/ */
+.ie6 legend,
+.ie7 legend {
+  margin-left: -7px;
+} /* thnx ivannikolic! */
 /* align checkboxes, radios, text inputs with their label
    by: Thierry Koblentz tjkdesign.com/ez-css/css/base.css  */
-input[type="radio"] { vertical-align: text-bottom; }
-input[type="checkbox"] { vertical-align: bottom; }
-.ie7 input[type="checkbox"] { vertical-align: baseline; }
-.ie6 input { vertical-align: text-bottom; }
-/* hand cursor on clickable input elements */
-label, input[type=button], input[type=submit], button { cursor: pointer; }
-/* webkit browsers add a 2px margin outside the chrome of form elements */  
-button, input, select, textarea { margin: 0; }
-/* colors for form validity */
-input:valid, textarea:valid   {  }
-input:invalid, textarea:invalid { 
-      border-radius: 1px;
-    -moz-box-shadow: 0px 0px 5px red; 
- -webkit-box-shadow: 0px 0px 5px red; 
-         box-shadow: 0px 0px 5px red;
+input[type="radio"] {
+  vertical-align: text-bottom;
 }
-.no-boxshadow input:invalid, 
-.no-boxshadow textarea:invalid { background-color: #f0dddd; }
+input[type="checkbox"] {
+  vertical-align: bottom;
+}
+.ie7 input[type="checkbox"] {
+  vertical-align: baseline;
+}
+.ie6 input {
+  vertical-align: text-bottom;
+}
+/* hand cursor on clickable input elements */
+label,
+input[type="button"],
+input[type="submit"],
+button {
+  cursor: pointer;
+}
+/* webkit browsers add a 2px margin outside the chrome of form elements */
+button,
+input,
+select,
+textarea {
+  margin: 0;
+}
+/* colors for form validity */
+input:valid,
+textarea:valid {
+}
+input:invalid,
+textarea:invalid {
+  border-radius: 1px;
+  -moz-box-shadow: 0px 0px 5px red;
+  -webkit-box-shadow: 0px 0px 5px red;
+  box-shadow: 0px 0px 5px red;
+}
+.no-boxshadow input:invalid,
+.no-boxshadow textarea:invalid {
+  background-color: #f0dddd;
+}
 /* These selection declarations have to be separate.
    No text-shadow: twitter.com/miketaylr/status/12228805301 
    Also: hot pink. */
-::-moz-selection{ background: #FF5E99; color:#fff; text-shadow: none; }
-::selection { background:#FF5E99; color:#fff; text-shadow: none; } 
+::-moz-selection {
+  background: #ff5e99;
+  color: #fff;
+  text-shadow: none;
+}
+::selection {
+  background: #ff5e99;
+  color: #fff;
+  text-shadow: none;
+}
 /*  j.mp/webkit-tap-highlight-color */
-a:link { -webkit-tap-highlight-color: #FF5E99; } 
+a:link {
+  -webkit-tap-highlight-color: #ff5e99;
+}
 /* make buttons play nice in IE:    
    www.viget.com/inspire/styling-the-button-element-in-internet-explorer/ */
-button {width: auto; overflow: visible;}
+button {
+  width: auto;
+  overflow: visible;
+}
 /* bicubic resizing for non-native sized IMG: 
    code.flickr.com/blog/2008/11/12/on-ui-quality-the-little-things-client-side-image-resizing/ */
-.ie7 img {-ms-interpolation-mode: bicubic;}
+.ie7 img {
+  -ms-interpolation-mode: bicubic;
+}
 
 /*
  *
@@ -143,24 +354,46 @@ button {width: auto; overflow: visible;}
  *
  */
 /* for image replacement */
-.ir { display: block; text-indent: -999em; overflow: hidden; background-repeat: no-repeat; text-align: left; direction: ltr; }
+.ir {
+  display: block;
+  text-indent: -999em;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  text-align: left;
+  direction: ltr;
+}
 /* Hide for both screenreaders and browsers
    css-discuss.incutio.com/wiki/Screenreader_Visibility */
-.hidden { display: none; visibility: hidden; } 
+.hidden {
+  display: none;
+  visibility: hidden;
+}
 /* Hide only visually, but have it available for screenreaders 
    www.webaim.org/techniques/css/invisiblecontent/  &  j.mp/visuallyhidden  */
-.visuallyhidden { position: absolute !important;    
+.visuallyhidden {
+  position: absolute !important;
   clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
-  clip: rect(1px, 1px, 1px, 1px); }
+  clip: rect(1px, 1px, 1px, 1px);
+}
 /* Hide visually and from screenreaders, but maintain layout */
-.invisible { visibility: hidden; }
+.invisible {
+  visibility: hidden;
+}
 /* >> The Magnificent CLEARFIX: Updated to prevent margin-collapsing on child elements << j.mp/bestclearfix */
-.clearfix:before, .clearfix:after {
-  content: "\0020"; display: block; height: 0; visibility: hidden;	
-} 
-.clearfix:after { clear: both; }
+.clearfix:before,
+.clearfix:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+.clearfix:after {
+  clear: both;
+}
 /* Fix clearfix: blueprintcss.lighthouseapp.com/projects/15318/tickets/5-extra-margin-padding-bottom-of-page */
-.clearfix { zoom: 1; }
+.clearfix {
+  zoom: 1;
+}
 
 /*
  *
@@ -168,15 +401,15 @@ button {width: auto; overflow: visible;}
  * These follow after primary styles so they will successfully override. 
  *
  */
-@media all and (orientation:portrait) { 
+@media all and (orientation: portrait) {
   /* Style adjustments for portrait mode goes here */
 }
-@media all and (orientation:landscape) { 
+@media all and (orientation: landscape) {
   /* Style adjustments for landscape mode goes here */
 }
 /* Grade-A Mobile Browsers (Opera Mobile, iPhone Safari, Android Chrome)  
    Consider this: www.cloudfour.com/css-media-query-for-mobile-is-fools-gold/ */
-@media screen and (max-device-width: 480px) {  
+@media screen and (max-device-width: 480px) {
   /* Uncomment if you don't want iOS and WinMobile to mobile-optimize the text for you
      j.mp/textsizeadjust 
   html { -webkit-text-size-adjust:none; -ms-text-size-adjust:none; } */
@@ -188,213 +421,244 @@ button {width: auto; overflow: visible;}
  *
  */
 @media print {
-  * { background: transparent !important; color: #444 !important; text-shadow: none !important; }
-  a, a:visited { color: #444 !important; text-decoration: underline; }
-  a:after { content: " (" attr(href) ")"; } 
-  abbr:after { content: " (" attr(title) ")"; }
-  .ir a:after { content: ""; }  /* Don't show links for images */
-  pre, blockquote { border: 1px solid #999; page-break-inside: avoid; }
-  thead { display: table-header-group; } /* css-discuss.incutio.com/wiki/Printing_Tables */ 
-  tr, img { page-break-inside: avoid; }
-  @page { margin: 0.5cm; }
-  p, h2, h3 { orphans: 3; widows: 3; }
-  h2, h3{ page-break-after: avoid; }
+  * {
+    background: transparent !important;
+    color: #444 !important;
+    text-shadow: none !important;
+  }
+  a,
+  a:visited {
+    color: #444 !important;
+    text-decoration: underline;
+  }
+  a:after {
+    content: " (" attr(href) ")";
+  }
+  abbr:after {
+    content: " (" attr(title) ")";
+  }
+  .ir a:after {
+    content: "";
+  } /* Don't show links for images */
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+  thead {
+    display: table-header-group;
+  } /* css-discuss.incutio.com/wiki/Printing_Tables */
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+  @page {
+    margin: 0.5cm;
+  }
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
 }
 
 /* Global Styles*/
 
 a {
-	text-decoration:none;
-	}
-a:hover{
-	text-decoration:underline;
-	}
-#content p{
-	line-height:20px;
-	margin-bottom:15px;
-	}
-	
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+#content p {
+  line-height: 20px;
+  margin-bottom: 15px;
+}
+
 /* Structure */
 #page {
-	display: block;
-	margin:0 auto;
-	width:960px;
+  display: block;
+  margin: 0 auto;
+  width: 960px;
 }
 #primary {
-	float: left;
-	margin: 0 -240px 0 0;
-	width: 100%;
+  float: left;
+  margin: 0 -240px 0 0;
+  width: 100%;
 }
 #content {
-	margin: 0 280px 0 0;
+  margin: 0 280px 0 0;
 }
-#branding{
-	display:inline-block;
-	position:relative;
-	width:100%;
-	height:150px;
-	}
+#branding {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  height: 150px;
+}
 #main .widget-area {
-	float: right;
-	overflow: hidden;
-	width: 220px;
+  float: right;
+  overflow: hidden;
+  width: 220px;
 }
 #colophon {
-	clear: both;
-	display: block;
-	width: 100%;
-	height:100px;
+  clear: both;
+  display: block;
+  width: 100%;
+  height: 100px;
 }
-#site-generator{
-	margin:0 auto;
-	display:block;
-	width:960px;
-	}
-	
+#site-generator {
+  margin: 0 auto;
+  display: block;
+  width: 960px;
+}
+
 /* Increase the size of the content area for templates without sidebars */
 .full-width #content,
 .image-attachment #content,
 .error404 #content {
-	margin: 0;
+  margin: 0;
 }
 
 /* Alignment */
 
 .alignleft {
-	display: inline;
-	float: left;
+  display: inline;
+  float: left;
 }
 .alignright {
-	display: inline;
-	float: right;
+  display: inline;
+  float: right;
 }
 .aligncenter {
-	clear: both;
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
+  clear: both;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
-
 
 /* Header */
 
 #site-title {
-	font-size: 2em;
-	font-weight: bold;
-	margin: .67em 0;
+  font-size: 2em;
+  font-weight: bold;
+  margin: 0.67em 0;
 }
 #site-description {
-	font-size: 1em;
-	font-weight: normal;
-	margin: 0 0 1em;
+  font-size: 1em;
+  font-weight: normal;
+  margin: 0 0 1em;
 }
-#logo{
-	position:absolute;
-	top:30px;
-	left:10px;
-	}
+#logo {
+  position: absolute;
+  top: 30px;
+  left: 10px;
+}
 
 /* Menu */
 
 #access {
-	position:absolute;
-	top:100px;
-	right:10px;
+  position: absolute;
+  top: 100px;
+  right: 10px;
 }
 #access ul {
-	list-style: none;
-	margin: 0;
-	padding-left: 0;
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
 }
 #access li {
-	float: left;
-	position: relative;
+  float: left;
+  position: relative;
 }
 #access a {
-	display: block;
-	line-height: 2em;
-	padding: 0 1em;
-	text-decoration: none;
+  display: block;
+  line-height: 2em;
+  padding: 0 1em;
+  text-decoration: none;
 }
 #access ul ul {
-	box-shadow: 0 3px 3px rgba(0,0,0,0.2);
-	-moz-box-shadow: 0 3px 3px rgba(0,0,0,0.2);
-	-webkit-box-shadow: 0 3px 3px rgba(0,0,0,0.2);
-	display: none;
-	float: left;
-	position: absolute;
-	top: 2em;
-	left: 0;
-	z-index: 99999;
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+  display: none;
+  float: left;
+  position: absolute;
+  top: 2em;
+  left: 0;
+  z-index: 99999;
 }
 #access ul ul ul {
-	left: 100%;
-	top: 0;
+  left: 100%;
+  top: 0;
 }
 #access ul ul a {
-	background: #333;
-	color: #fff;
-	line-height: 1em;
-	padding: .5em .5em .5em 1em;
-	width: 10em;
-	height: auto;
+  background: #333;
+  color: #fff;
+  line-height: 1em;
+  padding: 0.5em 0.5em 0.5em 1em;
+  width: 10em;
+  height: auto;
 }
 #access li:hover > a,
 #access ul ul :hover > a {
-	background: #333;
-	color: #fff;
+  background: #333;
+  color: #fff;
 }
 #access ul ul a:hover {
-	background: #000;
+  background: #000;
 }
 #access ul li:hover > ul {
-	display: block;
+  display: block;
 }
-
 
 /* Content */
 
 #content nav {
-	display: block;
-	overflow: hidden;
+  display: block;
+  overflow: hidden;
 }
 #content nav .nav-previous {
-	float: left;
-	width: 50%;
+  float: left;
+  width: 50%;
 }
 #content nav .nav-next {
-	float: right;
-	text-align: right;
-	width: 50%;
+  float: right;
+  text-align: right;
+  width: 50%;
 }
 #content #nav-above {
-	display: none;
+  display: none;
 }
 .paged #content #nav-above,
 .single #content #nav-above {
-	display: block;
+  display: block;
 }
 #nav-below {
-	margin: 1em 0 0;
+  margin: 1em 0 0;
 }
 .page-link {
-	margin: 0 0 1em;
+  margin: 0 0 1em;
 }
 
-
 /* Sidebar */
-.widget-area ul{
-	list-style:square;
-	}
-.widget-area aside{
-	margin-bottom:20px;
-	}	
-.widget-area ul li,.widget-title{
-	margin-bottom:10px;
-	}
-.widget-title{
-	font-size:16px;
-	}
+.widget-area ul {
+  list-style: square;
+}
+.widget-area aside {
+  margin-bottom: 20px;
+}
+.widget-area ul li,
+.widget-title {
+  margin-bottom: 10px;
+}
+.widget-title {
+  font-size: 16px;
+}
 /*
  *
  * Images
@@ -411,382 +675,405 @@ img.size-large,
 img.size-medium,
 .attachment img,
 .widget-area img {
-	max-width: 100%; /* When images are too wide for containing element, force them to fit. */
-	height: auto; /* Override height to match resized width for correct aspect ratio. */
+  max-width: 100%; /* When images are too wide for containing element, force them to fit. */
+  height: auto; /* Override height to match resized width for correct aspect ratio. */
 }
 img.alignleft {
-	margin-right: 1em;
+  margin-right: 1em;
 }
 img.alignright {
-	margin-left: 1em;
+  margin-left: 1em;
 }
 .wp-caption {
-	padding: .5em;
-	text-align: center;
+  padding: 0.5em;
+  text-align: center;
 }
 .wp-caption img {
-	margin: .25em;
+  margin: 0.25em;
 }
 .wp-caption .wp-caption-text {
-	margin: .5em;
+  margin: 0.5em;
 }
 
 /* Forms - Class for labelling required form items */
 .required {
-	color: #cc0033;
+  color: #cc0033;
 }
-input[type=text],input[type=submit]{
-	padding:5px 5px;
-	border:1px solid #CCC;
-	}
-input[type=submit]:hover{
-	background:#444;
-	color:#FFF;
-	}
-	
+input[type="text"],
+input[type="submit"] {
+  padding: 5px 5px;
+  border: 1px solid #ccc;
+}
+input[type="submit"]:hover {
+  background: #444;
+  color: #fff;
+}
+
 /* Footer */
 #colophon {
-	padding: 1em 0 0;
+  padding: 1em 0 0;
 }
-#site-generator ul{
-	list-style:none;
-	}
-#site-generator ul li{
-	display:inline-block;
-	}
-#site-generator ul li a{
-	margin:0 5px;
-	}	
-#copyright{
-	text-align:center;
-	}
-	
-	
+#site-generator ul {
+  list-style: none;
+}
+#site-generator ul li {
+  display: inline-block;
+}
+#site-generator ul li a {
+  margin: 0 5px;
+}
+#copyright {
+  text-align: center;
+}
+
 /* =Comments
 ----------------------------------------------- */
 
 #comments-title {
-	color: #666;
-	font-size: 10px;
-	font-weight: 500;
-	line-height: 2.6em;
-	padding: 0 0 2.6em;
-	text-transform: uppercase;
+  color: #666;
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 2.6em;
+  padding: 0 0 2.6em;
+  text-transform: uppercase;
 }
-.nopassword, .nocomments {
-	color: #aaa;
-	font-size: 24px;
-	font-weight: 100;
-	margin: 26px 0;
-	text-align: center;
+.nopassword,
+.nocomments {
+  color: #aaa;
+  font-size: 24px;
+  font-weight: 100;
+  margin: 26px 0;
+  text-align: center;
 }
 .commentlist {
-	list-style: none;
-	margin: 0 auto;
-	width: 68.9%;
+  list-style: none;
+  margin: 0 auto;
+  width: 68.9%;
 }
-.content .commentlist, .page-template-sidebar-page-php .commentlist {
-	width: 100%; /* reset the width for the one-column and sidebar page layout */
+.content .commentlist,
+.page-template-sidebar-page-php .commentlist {
+  width: 100%; /* reset the width for the one-column and sidebar page layout */
 }
 .commentlist > li.comment {
-	background: #f6f6f6;
-	border: 1px solid #ddd;
-	-moz-border-radius: 3px;
-	border-radius: 3px;
-	margin: 0 0 1.625em;
-	padding: 1.625em;
-	position: relative;
-	}
+  background: #f6f6f6;
+  border: 1px solid #ddd;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  margin: 0 0 1.625em;
+  padding: 1.625em;
+  position: relative;
+}
 .commentlist .pingback {
-	margin: 0 0 1.625em;
-	padding: 0 1.625em;
+  margin: 0 0 1.625em;
+  padding: 0 1.625em;
 }
 .commentlist .children {
-	list-style: none;
-	margin: 0;
+  list-style: none;
+  margin: 0;
 }
 .commentlist .children li.comment {
-	background: #fff;
-	border-left: 1px solid #ddd;
-	-moz-border-radius: 0 3px 3px 0;
-	border-radius: 0 3px 3px 0;
-	margin: 1.625em 0 0;
-	padding: 1.625em;
-	position: relative;
+  background: #fff;
+  border-left: 1px solid #ddd;
+  -moz-border-radius: 0 3px 3px 0;
+  border-radius: 0 3px 3px 0;
+  margin: 1.625em 0 0;
+  padding: 1.625em;
+  position: relative;
 }
 .commentlist .children li.comment .fn {
-	display: block;
+  display: block;
 }
 .comment-meta .fn {
-	font-style: normal;
+  font-style: normal;
 }
 .comment-meta {
-	color: #666;
-	font-size: 12px;
-	line-height: 2.2em;
+  color: #666;
+  font-size: 12px;
+  line-height: 2.2em;
 }
 .commentlist .children li.comment .comment-meta {
-	line-height: 1.625em;
-	margin-left: 60px;
+  line-height: 1.625em;
+  margin-left: 60px;
 }
 .commentlist .children li.comment .comment-content {
-	margin: 1.625em 0 0;
+  margin: 1.625em 0 0;
 }
 .comment-meta a {
-	font-weight: bold;
+  font-weight: bold;
 }
-.comment-meta a:focus, .comment-meta a:active, .comment-meta a:hover {
+.comment-meta a:focus,
+.comment-meta a:active,
+.comment-meta a:hover {
 }
 .commentlist .avatar {
-	-moz-border-radius: 3px;
-	border-radius: 3px;
-	-webkit-box-shadow: 0 1px 2px #ccc;
-	-moz-box-shadow: 0 1px 2px #ccc;
-	box-shadow: 0 1px 2px #ccc;
-	left: -102px;
-	padding: 0;
-	position: absolute;
-	top: 0;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-box-shadow: 0 1px 2px #ccc;
+  -moz-box-shadow: 0 1px 2px #ccc;
+  box-shadow: 0 1px 2px #ccc;
+  left: -102px;
+  padding: 0;
+  position: absolute;
+  top: 0;
 }
 .commentlist > li:before {
-	content: url(images/comment-arrow.png);
-	left: -21px;
-	position: absolute;
+  content: url(images/comment-arrow.png);
+  left: -21px;
+  position: absolute;
 }
 .commentlist > li.pingback:before {
-	content: '';
+  content: "";
 }
 .commentlist .children .avatar {
-	background: none;
-	-webkit-box-shadow: none;
-	-moz-box-shadow: none;
-	box-shadow: none;
-	left: 2.2em;
-	padding: 0;
-	top: 2.2em;
+  background: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  left: 2.2em;
+  padding: 0;
+  top: 2.2em;
 }
 a.comment-reply-link {
-	background: #eee;
-	-moz-border-radius: 3px;
-	border-radius: 3px;
-	color: #666;
-	display: inline-block;
-	font-size: 12px;
-	padding: 0 8px;
-	text-decoration: none;
+  background: #eee;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  color: #666;
+  display: inline-block;
+  font-size: 12px;
+  padding: 0 8px;
+  text-decoration: none;
 }
-a.comment-reply-link:hover, a.comment-reply-link:focus, a.comment-reply-link:active {
-	background: #888;
-	color: #fff;
+a.comment-reply-link:hover,
+a.comment-reply-link:focus,
+a.comment-reply-link:active {
+  background: #888;
+  color: #fff;
 }
 a.comment-reply-link > span {
-	display: inline-block;
-	position: relative;
-	top: -1px;
+  display: inline-block;
+  position: relative;
+  top: -1px;
 }
 /* Post author highlighting */
 .commentlist > li.bypostauthor {
-	background: #ddd;
-	border-color: #d3d3d3;
+  background: #ddd;
+  border-color: #d3d3d3;
 }
 .commentlist > li.bypostauthor .comment-meta {
-	color: #575757;
+  color: #575757;
 }
-.commentlist > li.bypostauthor .comment-meta a:focus, .commentlist > li.bypostauthor .comment-meta a:active, .commentlist > li.bypostauthor .comment-meta a:hover {
+.commentlist > li.bypostauthor .comment-meta a:focus,
+.commentlist > li.bypostauthor .comment-meta a:active,
+.commentlist > li.bypostauthor .comment-meta a:hover {
 }
 .commentlist > li.bypostauthor:before {
-	content: url(images/comment-arrow-bypostauthor.png);
+  content: url(images/comment-arrow-bypostauthor.png);
 }
 /* Post Author threaded comments */
 .commentlist .children > li.bypostauthor {
-	background: #ddd;
-	border-color: #d3d3d3;
+  background: #ddd;
+  border-color: #d3d3d3;
 }
 /* sidebar-page.php comments */
 /* Make sure we have room for our comment avatars */
-.page-template-sidebar-page-php .commentlist > li.comment, .page-template-sidebar-page-php.commentlist .pingback {
-	margin-left: 102px;
-	width: auto;
+.page-template-sidebar-page-php .commentlist > li.comment,
+.page-template-sidebar-page-php.commentlist .pingback {
+  margin-left: 102px;
+  width: auto;
 }
 /* And a full-width comment form */
 .page-template-sidebar-page-php #respond {
-	width: auto;
-}	
+  width: auto;
+}
 /* Comment Form */
 #respond {
-	background: #1E1711;
-	border: 1px solid #201B15;
-	-moz-border-radius: 3px;
-	border-radius: 3px;
-	margin: 0 auto 1.625em;
-	padding: 1.625em;
-	position: relative;
-	width: 68.9%;
+  background: #1e1711;
+  border: 1px solid #201b15;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  margin: 0 auto 1.625em;
+  padding: 1.625em;
+  position: relative;
+  width: 68.9%;
 }
-#respond input[type="text"], #respond textarea {
-	background: #fff;
-	border: 4px solid #eee;
-	-moz-border-radius: 5px;
-	border-radius: 5px;
-	-webkit-box-shadow: inset 0 1px 3px rgba(204, 204, 204, 0.95);
-	-moz-box-shadow: inset 0 1px 3px rgba(204, 204, 204, 0.95);
-	box-shadow: inset 0 1px 3px rgba(204, 204, 204, 0.95);
-	position: relative;
-	padding: 10px;
-	text-indent: 80px;
+#respond input[type="text"],
+#respond textarea {
+  background: #fff;
+  border: 4px solid #eee;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-box-shadow: inset 0 1px 3px rgba(204, 204, 204, 0.95);
+  -moz-box-shadow: inset 0 1px 3px rgba(204, 204, 204, 0.95);
+  box-shadow: inset 0 1px 3px rgba(204, 204, 204, 0.95);
+  position: relative;
+  padding: 10px;
+  text-indent: 80px;
 }
-#respond .comment-form-author, #respond .comment-form-email, #respond .comment-form-url, #respond .comment-form-comment {
-	position: relative;
+#respond .comment-form-author,
+#respond .comment-form-email,
+#respond .comment-form-url,
+#respond .comment-form-comment {
+  position: relative;
 }
-#respond .comment-form-author label, #respond .comment-form-email label, #respond .comment-form-url label, #respond .comment-form-comment label {
-	background: #eee;
-	-webkit-box-shadow: 1px 2px 2px rgba(204, 204, 204, 0.8);
-	-moz-box-shadow: 1px 2px 2px rgba(204, 204, 204, 0.8);
-	box-shadow: 1px 2px 2px rgba(204, 204, 204, 0.8);
-	color: #555;
-	display: inline-block;
-	font-size: 13px;
-	left: 4px;
-	min-width: 60px;
-	padding: 4px 10px;
-	position: relative;
-	top: 40px;
-	z-index: 1;
+#respond .comment-form-author label,
+#respond .comment-form-email label,
+#respond .comment-form-url label,
+#respond .comment-form-comment label {
+  background: #eee;
+  -webkit-box-shadow: 1px 2px 2px rgba(204, 204, 204, 0.8);
+  -moz-box-shadow: 1px 2px 2px rgba(204, 204, 204, 0.8);
+  box-shadow: 1px 2px 2px rgba(204, 204, 204, 0.8);
+  color: #555;
+  display: inline-block;
+  font-size: 13px;
+  left: 4px;
+  min-width: 60px;
+  padding: 4px 10px;
+  position: relative;
+  top: 40px;
+  z-index: 1;
 }
-#respond input[type="text"]:focus, #respond textarea:focus {
-	text-indent: 0;
-	z-index: 1;
+#respond input[type="text"]:focus,
+#respond textarea:focus {
+  text-indent: 0;
+  z-index: 1;
 }
 #respond textarea {
-	resize: vertical;
-	width: 95%;
+  resize: vertical;
+  width: 95%;
 }
-#respond .comment-form-author .required, #respond .comment-form-email .required {
-	color: #bd3500;
-	font-size: 22px;
-	font-weight: bold;
-	left: 75%;
-	position: absolute;
-	top: 45px;
-	z-index: 1;
+#respond .comment-form-author .required,
+#respond .comment-form-email .required {
+  color: #bd3500;
+  font-size: 22px;
+  font-weight: bold;
+  left: 75%;
+  position: absolute;
+  top: 45px;
+  z-index: 1;
 }
-#respond .comment-notes, #respond .logged-in-as {
-	font-size: 13px;
-	color:#CCC;
+#respond .comment-notes,
+#respond .logged-in-as {
+  font-size: 13px;
+  color: #ccc;
 }
 #respond p {
-	margin: 10px 0;
+  margin: 10px 0;
 }
 #respond .form-submit {
-	float: right;
-	margin: -20px 0 10px;
+  float: right;
+  margin: -20px 0 10px;
 }
 #respond input#submit {
-	background: #222;
-	border: none;
-	-moz-border-radius: 3px;
-	border-radius: 3px;
-	-webkit-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3);
-	-moz-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3);
-	box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3);
-	color: #eee;
-	cursor: pointer;
-	font-size: 15px;
-	margin: 20px 0;
-	padding: 5px 42px 5px 22px;
-	position: relative;
-	left: 30px;
-	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.3);
+  background: #222;
+  border: none;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3);
+  color: #eee;
+  cursor: pointer;
+  font-size: 15px;
+  margin: 20px 0;
+  padding: 5px 42px 5px 22px;
+  position: relative;
+  left: 30px;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.3);
 }
 #respond input#submit:active {
-	background: #1982d1;
-	color: #bfddf3;
+  background: #1982d1;
+  color: #bfddf3;
 }
 #respond #cancel-comment-reply-link {
-	color: #666;
-	margin-left: 10px;
-	text-decoration: none;
+  color: #666;
+  margin-left: 10px;
+  text-decoration: none;
 }
-#respond .logged-in-as a:hover, #respond #cancel-comment-reply-link:hover {
-	text-decoration: underline;
+#respond .logged-in-as a:hover,
+#respond #cancel-comment-reply-link:hover {
+  text-decoration: underline;
 }
 .commentlist #respond {
-	margin: 1.625em 0 0;
-	width: auto;
+  margin: 1.625em 0 0;
+  width: auto;
 }
 #reply-title {
-	color: #FDFDFD;
-	font-size: 24px;
-	font-weight: bold;
-	line-height: 30px;
+  color: #fdfdfd;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 30px;
 }
 #cancel-comment-reply-link {
-	color: #888;
-	display: block;
-	font-size: 10px;
-	font-weight: normal;
-	line-height: 2.2em;
-	letter-spacing: 0.05em;
-	position: absolute;
-	right: 1.625em;
-	text-decoration: none;
-	text-transform: uppercase;
-	top: 1.1em;
+  color: #888;
+  display: block;
+  font-size: 10px;
+  font-weight: normal;
+  line-height: 2.2em;
+  letter-spacing: 0.05em;
+  position: absolute;
+  right: 1.625em;
+  text-decoration: none;
+  text-transform: uppercase;
+  top: 1.1em;
 }
-#cancel-comment-reply-link:focus, #cancel-comment-reply-link:active, #cancel-comment-reply-link:hover {
-	color: #ff4b33;
+#cancel-comment-reply-link:focus,
+#cancel-comment-reply-link:active,
+#cancel-comment-reply-link:hover {
+  color: #ff4b33;
 }
 #respond label {
-	line-height: 2.2em;
+  line-height: 2.2em;
 }
-#respond input[type=text] {
-	display: block;
-	height: 24px;
-	width: 75%;
+#respond input[type="text"] {
+  display: block;
+  height: 24px;
+  width: 75%;
 }
 #respond p {
-	font-size: 12px;
+  font-size: 12px;
 }
 p.comment-form-comment {
-	margin: 0;
+  margin: 0;
 }
 .form-allowed-tags {
-	display: none;
+  display: none;
 }
 
-.children .fn,.children .says{
-	display:inline-block;
-	margin-left:60px;
-	}
-
-
+.children .fn,
+.children .says {
+  display: inline-block;
+  margin-left: 60px;
+}
 
 /* blog posts */
-.entry-header,.entry-content,.entry-title{
-	margin-bottom:10px;
-	}
-.entry-title{
-	font-size:25px;
-	}
-.entry-title a{
-	text-decoration:none;
-	}	
-.entry-meta{
-	color:#999;
-	}
+.entry-header,
+.entry-content,
+.entry-title {
+  margin-bottom: 10px;
+}
+.entry-title {
+  font-size: 25px;
+}
+.entry-title a {
+  text-decoration: none;
+}
+.entry-meta {
+  color: #999;
+}
 .entry-meta a {
-	 color:#444;
-	 }	
-.entry-meta a:hover{
-	color:#444;
-	}
+  color: #444;
+}
+.entry-meta a:hover {
+  color: #444;
+}
 
 /* post navigation */
-#nav-above{
-	margin-bottom:10px;
-	}
-.section-heading{
-	text-transform:uppercase;
-	font-size:12px;
-	color:#999;
-	}	
+#nav-above {
+  margin-bottom: 10px;
+}
+.section-heading {
+  text-transform: uppercase;
+  font-size: 12px;
+  color: #999;
+}
